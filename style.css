@@ -111,6 +111,7 @@ ul a:hover {
     position: absolute;
     background-color: darkgray;
     min-width: 100%;
+    z-index: 400;
     visibility: hidden;
 }
 
@@ -219,7 +220,8 @@ ul a:hover {
 } */
 
 .slider-container {
-    height: 500px;
+    /* border: 1px solid #000; */
+    height: 350px;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -229,7 +231,7 @@ ul a:hover {
 .menu {
     position: absolute;
     left: 0;
-    z-index: 900;
+    z-index: 300;
     width: 100%;
     bottom: 0;
 }
@@ -239,7 +241,7 @@ ul a:hover {
     display: inline-block;
     width: 16px;
     height: 16px;
-    background: #333;
+    background: #222;
     border-radius: 50px;
     margin: 0 .2em 1em;
     transition: all .3s ease;
@@ -253,8 +255,9 @@ ul a:hover {
     left: 100%;
     z-index: 10;
     padding: 8em 1em 0;
-    background-size: cover;
-    background-position: 50% 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     transition: left 0s .75s;
 }
 
@@ -265,7 +268,7 @@ ul a:hover {
 }
 
 .slide-1 {
-    background-image: url("assets/img/banner-1.png");
+    background-image: url("assets/img/banner-1.jpg");
 }
 
 .slide-2 {
